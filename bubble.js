@@ -1,5 +1,6 @@
-
 let array = [5,4,3,2,1];
+
+console.log("before bubble: " + array);
 
 bubble = (array) => {
 
@@ -15,9 +16,9 @@ bubble = (array) => {
         }
     }
 
-    console.log(array);
+    console.log("after bubble: " + array);
 }
 
 bubble(array);
 
-//console.log(array.sort())
+//console.log(array.sort());
