@@ -54,3 +54,48 @@ let obj = {
 };
 
 console.log(obj.sum(1,5));
+
+// args 
+
+const test = (...args) => {
+    console.log(args)
+}
+
+test(5,5,5,5);
+
+
+// return multiply of all args passing by comand line
+const multiply = (...args) => args.reduce((acc, value) => acc * value, 1);
+
+console.log(multiply(7,3,5,4,1));
+
+// symbols
+
+const uniqueid = Symbol("Hello");
+
+// well known symbols 
+
+Symbol.iterator;
+Symbol.split;
+Symbol.toStringTag;
+
+// example
+
+const arr = [1,2,3,4];
+
+const it = arr[Symbol.iterator]();
+
+while(true) {
+    let {value, done} = it.next();
+
+    if (done) {
+        break;
+    }
+
+    console.log(value);
+}
+
+// most used
+for(let value of arr) {
+    console.log(value);
+} 
