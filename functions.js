@@ -1,3 +1,15 @@
+// var can be updated e redeclared
+var hello = "hello";
+
+let hi = "hi";
+// let can be updated but not redeclared
+// let is most use than var 
+
+const avocado = "avocado";
+// const cannot be updated or redeclared
+// const has block scoped
+
+
 function number() {
     return 1;
 }
